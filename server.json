@@ -3,7 +3,7 @@
   "name": "com.greencyclepedia/atlas",
   "title": "GreenCycle Compound Atlas",
   "description": "Read-only cannabis compound, receptor, anatomy and evidence data, every value sourced.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "websiteUrl": "https://greencyclepedia.com/",
   "repository": {
     "url": "https://github.com/Moses10119/greencycle-atlas-mcp",
