@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use the atlas data, cite it as below, and cite the original paper for any finding (each record lists its PubMed identifiers)."
+title: "GreenCycle Compound Atlas"
+abstract: "Open, sourced data on cannabis compounds, the receptors, channels and enzymes they act on, where those targets sit in the human body, and the evidence for medical conditions. Served as JSON files and as a read-only MCP server."
+type: dataset
+authors:
+  - name: "GreenCycle Compound Atlas"
+    website: "https://greencyclepedia.com/"
+version: "2026-10-20"
+date-released: "2026-10-20"
+url: "https://greencyclepedia.com/"
+repository-code: "https://github.com/Moses10119/greencycle-atlas-mcp"
+repository-artifact: "https://greencyclepedia.com/api/index.json"
+license: CC-BY-4.0
+keywords:
+  - cannabis
+  - cannabinoids
+  - terpenes
+  - pharmacology
+  - receptors
+  - evidence
+  - open data
+  - model context protocol

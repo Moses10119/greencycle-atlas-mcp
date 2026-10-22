@@ -9,6 +9,7 @@
   <img alt="No key, no sign up" src="https://img.shields.io/badge/auth-none-b8a06a?style=flat-square">
   <a href="https://creativecommons.org/licenses/by/4.0/"><img alt="Data: CC BY 4.0" src="https://img.shields.io/badge/data-CC%20BY%204.0-6a7368?style=flat-square"></a>
   <a href="LICENSE"><img alt="Repository: MIT" src="https://img.shields.io/badge/repo-MIT-6a7368?style=flat-square"></a>
+  <a href="https://github.com/Moses10119/greencycle-atlas-mcp/actions/workflows/live-check.yml"><img alt="Live server check" src="https://github.com/Moses10119/greencycle-atlas-mcp/actions/workflows/live-check.yml/badge.svg"></a>
 </p>
 
 # GreenCycle Compound Atlas MCP server
@@ -17,7 +18,9 @@
 
 Read-only cannabis compound, receptor, body and evidence data for AI agents. Every value sourced. No key.
 
-This repository holds the listing details of the hosted server. The server runs at https://greencyclepedia.com/mcp and needs no key and no sign up.
+This repository holds the listing details of the hosted server, [worked examples](examples/README.md) with real answers, and the templates to [report a data error](CONTRIBUTING.md). The server runs at https://greencyclepedia.com/mcp and needs no key and no sign up.
+
+If this helps, a star helps others find it.
 
 ## Try it in 30 seconds
 
@@ -73,7 +76,11 @@ Every result carries its provenance: dataset address and version, source identif
 | Cursor | `~/.cursor/mcp.json`: `{"mcpServers": {"greencyclepedia": {"url": "https://greencyclepedia.com/mcp"}}}` |
 | VS Code | `.vscode/mcp.json`: `{"servers": {"greencyclepedia": {"type": "http", "url": "https://greencyclepedia.com/mcp"}}}` |
 
-Full setup for each client: https://greencyclepedia.com/about/ai-agents/
+Full setup for each client: https://greencyclepedia.com/about/ai-agents/?ref=github
+
+## Examples
+
+Five calls with the answers the live server gave, from `initialize` to `cite`: [examples](examples/README.md).
 
 ## Links
 
@@ -82,8 +89,11 @@ Full setup for each client: https://greencyclepedia.com/about/ai-agents/
 - OpenAPI: https://greencyclepedia.com/api/openapi.json
 - Guide for models: https://greencyclepedia.com/llms.txt
 - Official MCP Registry name: `com.greencyclepedia/atlas`
-- Privacy: https://greencyclepedia.com/about/privacy/
-- Terms: https://greencyclepedia.com/about/terms/
+- Privacy: https://greencyclepedia.com/about/privacy/?ref=github
+- Terms: https://greencyclepedia.com/about/terms/?ref=github
+- Report a data error or ask for a compound: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Cite the data: [CITATION.cff](CITATION.cff)
+- Security: [SECURITY.md](SECURITY.md)
 
 ## Licence
 

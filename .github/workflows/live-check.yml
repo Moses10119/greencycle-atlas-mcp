@@ -1,0 +1,32 @@
+name: Live server check
+
+# Once a day: the hosted server answers tools/list with get_compound among its tools, and its server card names it.
+# No secrets. The user agent and X-GC-Automated header keep these checks out of the server's visitor and MCP counts.
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: tools/list answers
+        run: |
+          set -euo pipefail
+          out=$(curl -sS --fail --max-time 30 https://greencyclepedia.com/mcp \
+            -A 'GCAtlasTest-uptime/1.0 (GitHub Actions)' -H 'X-GC-Automated: 1' \
+            -H 'Content-Type: application/json' -H 'Accept: application/json, text/event-stream' \
+            -H 'MCP-Protocol-Version: 2025-06-18' \
+            -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}')
+          echo "tools: $(echo "$out" | jq '.result.tools | length')"
+          echo "$out" | jq -e '.result.tools[] | select(.name == "get_compound")' > /dev/null
+      - name: server card answers
+        run: |
+          set -euo pipefail
+          curl -sS --fail --max-time 30 -A 'GCAtlasTest-uptime/1.0 (GitHub Actions)' -H 'X-GC-Automated: 1' \
+            https://greencyclepedia.com/.well-known/mcp.json | jq -e '.name == "com.greencyclepedia/atlas"'

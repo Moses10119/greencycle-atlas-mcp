@@ -1,0 +1,28 @@
+name: New compound request
+description: Ask for a compound the atlas does not map yet.
+title: "New compound: "
+labels: ["new compound"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Compound name
+    validations:
+      required: true
+  - type: input
+    id: cid
+    attributes:
+      label: PubChem CID
+      description: From https://pubchem.ncbi.nlm.nih.gov/
+  - type: textarea
+    id: sources
+    attributes:
+      label: Papers that measured it
+      description: PubMed identifiers or DOIs of studies that measured it in cannabis or at a molecular target (receptor, channel or enzyme). Every value in the atlas needs a source.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What you would use it for
+      description: Optional. Helps decide what to map first.

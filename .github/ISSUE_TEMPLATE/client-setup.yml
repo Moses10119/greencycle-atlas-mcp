@@ -1,0 +1,32 @@
+name: Client set up problem
+description: Your MCP client does not connect, lists no tools or a call fails.
+title: "Set up: "
+labels: ["client setup"]
+body:
+  - type: input
+    id: client
+    attributes:
+      label: Client and version
+      description: For example Claude Desktop, Claude Code, Cursor, VS Code or ChatGPT, with the version from its About or help screen.
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: Config or command you used
+      description: Remove anything private. The server needs no key.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: What happened
+      description: The exact error text, or what you expected and what you saw.
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When
+      description: Date and time with time zone, so the server side can be checked.

@@ -1,0 +1,43 @@
+name: Data correction
+description: A value, source or text in the atlas is wrong, missing or misread.
+title: "Correction: "
+labels: ["data correction"]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record
+      description: The atlas id or page, for example compound:cbd or https://greencyclepedia.com/compounds/cbd/
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Field
+      description: For example a binding value at CB1, an evidence grade, a cultivar measurement, a caution.
+    validations:
+      required: true
+  - type: textarea
+    id: now
+    attributes:
+      label: What it says now
+    validations:
+      required: true
+  - type: textarea
+    id: should
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: The PubMed identifier, DOI or database record that shows it.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: The page, table or figure of the source where the value appears helps.
