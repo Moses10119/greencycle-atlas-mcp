@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.greencyclepedia/atlas",
+  "title": "GreenCycle Compound Atlas",
+  "description": "Read-only cannabis compound, receptor, anatomy and evidence data, every value sourced.",
+  "version": "1.1.0",
+  "websiteUrl": "https://greencyclepedia.com/",
+  "icons": [
+    {
+      "src": "https://greencyclepedia.com/assets/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://greencyclepedia.com/assets/icon-400.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "400x400"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://greencyclepedia.com/mcp"
+    }
+  ]
+}
