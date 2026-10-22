@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://glama.ai/mcp/connectors/com.greencyclepedia/atlas"><img alt="GreenCycle Compound Atlas MCP connector on Glama" src="https://glama.ai/mcp/connectors/com.greencyclepedia/atlas/badges/score.svg"></a>
   <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=com.greencyclepedia/atlas"><img alt="Official MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-com.greencyclepedia%2Fatlas-0a2e25?style=flat-square"></a>
   <img alt="Transport: Streamable HTTP" src="https://img.shields.io/badge/transport-streamable%20HTTP-2D9E66?style=flat-square">
   <img alt="13 read-only tools" src="https://img.shields.io/badge/tools-13%20read--only-2D9E66?style=flat-square">
